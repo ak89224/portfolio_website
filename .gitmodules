@@ -1,0 +1,3 @@
+[submodule "DevBlog-Theme"]
+	path = DevBlog-Theme
+	url = https://github.com/ak89224/DevBlog-Theme.git
