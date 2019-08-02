@@ -8,3 +8,10 @@ class blog(models.Model):
     pub_date = models.DateTimeField(null=True, default=timezone.now())
     body = models.TextField(default='None')
     thumbnail = models.ImageField(upload_to='images/')
+
+    def summary(self):
+        return self.body[:200]
+
+    def __str__(self):
+        return self.blog_title
+    
